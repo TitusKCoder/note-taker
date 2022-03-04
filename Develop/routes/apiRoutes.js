@@ -16,7 +16,7 @@ api.get('/notes', (req, res) => {
 
 api.post('/notes', (req, res) =>{
     console.log(req.body)
-    // id++
+    //id++
   // Each note needs unique id when saved. 
     req.body.id = Math.floor((1+ Math.random())* 0x100000); 
     newEntry.push(req.body);
